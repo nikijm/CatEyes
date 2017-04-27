@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>猫眼电影后台管理</title>
+
+	<link rel="stylesheet" type="text/css" href="themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="css/manager.css">
+
+	<style type="text/css">
+
+	</style>
+
+
+
+	<script type="text/javascript" src="js/sea.js"></script>
+	<script type="text/javascript">
+
+		seajs.config({
+			base:".",
+			alias:{
+				jquery:"js/jquery.seajs.min.js",
+				easyui:"js/jquery.easyui.seajs.min.js",
+				manager:"js/manager",
+				yinxun:"modules/newsManage/js/yinxun",
+				dianyin:"modules/movieManage/js/dianyin",
+				hotRelease:"modules/hotRelease/hotRelease",
+				ComingSoon:"modules/comingsoon/comingSoon",
+				hotplay:"modules/hotPlay/hotPlay.js",
+				match:"modules//movieMatch/match",
+				cinemaManage:"modules/cinemaManage/js/cinemaManage",
+				um:"modules/userManage/um"
+			}
+		});
+
+		seajs.use("manager");
+
+	</script>
+</head>
+
+<body>
+
+<div class="easyui-layout" data-options="fit:'true'">
+    <div id="up" data-options="region:'north'"">
+		<header style="height:120px;" class="myH">
+			<img src="images/timg (1).jpg" style="width: 100%;height: 100%">
+			<div class="wolcome" >
+				<span id="userName"></span>已登录：
+				<a href="javascript:void(0)" id="rloginOut">安全退出</a>
+			</div>
+		</header>
+    </div>
+
+    <div data-options="region:'west',title:'功能列表'" style="width:190px;">
+		<ul class="easyui-tree" id="ll">
+		    <li>
+				<span>用户管理</span>
+			</li>
+		    <li>
+				<span>资讯管理</span>
+			</li>
+		    <li>
+				<span>电影管理</span>
+			</li>
+		    <li>
+				<span>院线管理</span>
+			</li>
+		    <li>
+				<span>电影院线匹配管理</span>
+			</li>
+		    <li>
+				<span>热映电影管理</span>
+			</li>
+		    <li>
+				<span>即将上映管理</span>
+			</li>
+		    <li>
+				<span>热播电影管理</span>
+			</li>
+		</ul>
+    </div>
+
+    <div data-options="region:'center'" style="background:#eee;">
+    	<div id="MyTabs" class="easyui-tabs" data-options="fit:'true'">
+	    	<div title="欢迎" data-options="closable:true">
+	    		<p style="font-size: 25px;font-weight: 700;text-align: center;">欢迎登录猫眼电影管理系统</p>
+	    	</div>
+		</div>
+    </div>
+
+    <div data-options="region:'south'" style="width: 100%;height: 100px;">
+    	<img src="images/footr0.jpg" style="width: 100%;height: 100%">
+    </div>
+
+</div>
+
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/loginm.js"></script>
+</body>
+
+</html>

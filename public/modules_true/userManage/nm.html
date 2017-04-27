@@ -1,0 +1,52 @@
+<style type="text/css">
+	#infoBoxForm>div {
+		margin-top: 10px;
+	}
+</style>
+<!--搜索的输入框-->
+<div style="position: absolute;top: 35px;left: 360px;z-index: 2;">
+	<input id="ssInput" style="width: 280px"/>
+	<div id="ssSelect" style="width:40px">
+		<div data-options="name:'acc'">用户名</div>
+		<div data-options="name:'Tel'">电话</div>
+	</div>
+</div>
+<!--加载数据的表格-->
+<table id="mainTable"></table>
+
+<!--添加的彈框-->
+<div style="width: 500px;height: 300px;" id="infoBox" title="增加">
+
+	<form id="infoBoxForm" method="POST">
+		<div>
+			<label for="accId">　用户　名 ：　</label>
+			<input id="accId" validtype="ACC" class="easyui-textbox easyui-validatebox" style="width:200px;padding:3px" name="acc" data-options="required:true" />
+
+		</div>
+
+		<div>
+			<label for="pwdId">　电　　话 ：　</label>
+			<input id="pwdId" validtype="TEL" class="easyui-textbox easyui-validatebox" style="width:200px;padding:3px" name="tel" data-options="required:true" />
+		</div>
+		<div>
+			<label for="rpwdId">　密　　码 ：　</label>
+			<input id="rpwdId" validtype="PWD" class="easyui-passwordbox easyui-validatebox" style="width:200px;padding:3px" name="pwd" data-options="required:true" />
+		</div>
+
+		<div>
+			<label for="rpwd">　确认密码 ：　</label>
+			<input id="rpwd" name="rpwd" class="easyui-validatebox easyui-passwordbox" required="required" validType="equals['#pwd']" data-options="required:true" style="width:200px;padding:3px" />
+
+		</div>
+
+		<div>
+			<label for="pwdId">　邮　　箱 ：　</label>
+			<input id="pwdId" validtype="EMAIL" class="easyui-textbox easyui-validatebox" style="width:200px;padding:3px" name="email" data-options="required:true" />
+		</div>
+
+		<div>
+			<label for="accId">　出生日期 ：　</label>
+			<input id="accId" validtype="BIRTH" class="easyui-textbox easyui-validatebox" style="width:200px;padding:3px" name="birth" data-options="required:true" />
+		</div>
+	</form>
+</div>

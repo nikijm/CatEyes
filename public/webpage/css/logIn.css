@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contentL{
+    width: 870px;
+    height: 533px;
+    margin:40px auto;
+}
+a{
+    text-decoration: none;
+}
+.logoL{
+    height: 48px;
+}
+.pictureL{
+    width: 480px;
+    height: 370px;
+    margin-top: 39px;
+    float: left;
+}
+.menuL{
+    width: 273px;
+    height: 370px;
+    float: right;
+    margin-top: 92px;
+}
+.menu1L{
+    width: 273px;
+    height: 20px;
+
+}
+.menu1L span{
+    font-size: 15px;
+    color:#666666;
+    padding-right: 115px;
+}
+
+.menu1L a{
+    font-size: 13px;
+    color: #666666;
+}
+.menu1L a:hover{
+    border-bottom: 1px solid #8f8f8f;
+}
+.infoL{
+    height: 34px;
+    position: relative;
+    padding:5px 0 ;
+}
+.infoL input{
+    width: 271px;
+    height: 34px;
+    text-indent: 34px;
+    outline: none;
+    border: 1px solid #8f8f8f;
+
+}
+.infoL input:focus{
+    border: 1px solid #e3292e;
+}
+.infoL i{
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 10px;
+    left:10px;
+}
+.menu4L{
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+}
+.ddL{
+    font-size: 13px;
+    padding-right:90px;
+}
+.menu4L a{
+    color: #e3292e;
+    font-size: 13px;
+}
+#myBtn {
+    width: 273px;
+    height: 35px;
+    background-color: #e3292e;
+    outline: none;
+   line-height: 35px;
+    text-align: center;
+    margin: 15px 0px 11px 0px;
+      color: white;
+}
+.menu5L a{
+    color: white;
+}
+
+.menu6L span{
+    font-size: 14px;
+}
+.menu6L a{
+    font-size: 14px;
+    color: #e3292e;
+}
+.footL{
+    width: 100%;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.footL p{
+    font-size: 13px;
+    text-align: center;
+    color: #cccccc;
+}
+.footL a{
+    color: #cccccc;
+    font-size: 13px;
+}
+.footL a:hover{
+    border-bottom: 1px solid #cccccc ;
+}

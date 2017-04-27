@@ -1,0 +1,125 @@
+<style type="text/css">
+	#seat{
+		display: none;
+	}	
+	#addForm{
+		width: 330px;
+		height: 140px;
+		border: 1px solid #aaa;
+		margin: auto;
+		border-radius: 5px;
+	}
+	#addHallForm{
+		width: 330px;
+		height: 100px;
+		border: 1px solid #aaa;
+		margin: auto;
+		border-radius: 5px;
+	}
+	#seat ul{
+		float: left;
+		list-style-type: none;
+	}
+	.seat{
+		display: inline-block;
+	    margin: 0 5px;
+	    width: 20px;
+	    height: 17px;
+	    vertical-align: middle;
+	    outline: 0;
+		background: url("../images/sp-seats.png") no-repeat;
+	}
+	.active{
+		margin-left: 150px;
+		background-position: -27px 0;
+	}
+	.disabled{
+		background-position: -52px 0;
+	}
+	.selected{
+		background-position: -77px 0;
+	}
+	#clearSearch{
+		cursor: pointer;
+	}
+	#addHallSeat{
+		display: none;
+	}
+	#seeDiv img{
+		padding: 5px;
+	}
+</style>
+
+<table id="manageTable">
+    <div id="tool"> 
+        <a id="addCinema">增加 </a> 
+        <a id="removeCinema">删除  </a>
+        <a id="editCinema">修改 </a>
+        <a id="saveCinema">保存 </a>
+        <!-- <a id="seeHall">查看  </a> -->
+        <a id="reloadTable">刷新  </a>
+        <input id="ss" style="width:300px" data-options="searcher:'qq',prompt:'请输入内容',menu:'#mm'"></input> 
+        <div id="mm"> 
+            <div data-options="name:'all'">院线名</div> 
+            <div data-options="name:'address'">地址</div> 
+            <div data-options="name:'phone'">电话</div> 
+        </div>
+        <a class="easyui-linkbutton" style="color:black" id="clearSearch">清空搜索(假的)</a>
+    </div>  
+</table>
+<!-- 
+<div id="addDiv" style="width: 450px;height: 300px;">
+	<form id="addForm" method="post">
+		<p style="margin: 30px 10px;">　院线名 ：　<input id="cinemaNameInput" name="cinemaName"></p>
+		<p style="margin: 30px 10px;">　地　址 ：　<input name="address"></p>
+		<p style="margin: 30px 10px;">　电　话 ：　<input name="phone"></p>	
+	</form> 　
+	<a style="margin-left: 45px;" id="addScreens">增加放映厅</a>
+	<div id="addHallSeat">
+		<form id="addHallForm" method="post">
+			<p style="margin: 15px 10px;">放映厅名 ：　<input id="hallName" name="hallName"></p>
+			<p style="margin: 10px 2px 15px 10px;">　座　位 ：　<input style="height: 25px;" id="seats" name="seat"><a id="searchSeat">查看</a>
+			</p>
+		</form>
+	</div>
+	<div id="seat">
+		<p style="text-align: center;">
+			<span class="seat active"></span><span>可选</span>
+			<span class="seat disabled"></span><span>已售</span>
+		</p>
+		<div id="seatList"></div>
+	</div>
+</div>     	    --> 
+	      	<!-- 添加按钮的弹窗 -->
+<div id="tanchuang" style="width: 400px;display: none;">
+	<div id="addForm">
+		<p style="margin: 20px 10px;">　院线名 ：　<input id="addInput1" type="text" name="name"/></p>	    	
+		<p style="margin: 20px 10px;">　地　址 ：　<input id="addInput2" type="text" name="address"/></p>	    	    			
+		<p style="margin: 20px 10px;">　电　话 ：　<input id="addInput3" type="text" name="phone"/></p>
+    		<!-- <div id="fangYingDiv">
+    			<div>
+	    			<p>放映厅:</p>
+	    			<input id="addInput5" type="text" name="rooms"/>
+	    		</div>
+	    		<div>
+	    			<p>座位:</p>
+	    			<input id="addInput6" type="text" name="seats"/>
+	    			<button id="see">查看</button>
+	    		</div>
+    		</div> -->
+    </div>
+	<a style="margin-left: 25px;" id="fangYingBtn">增加放映厅</a>
+</div>
+<div id="screen" class="easyui-dialog" style="display: none;">
+	<div style="margin-left: 60px;">
+		<p style="margin-top: 20px;">放映厅：　<input id="addInput5" type="text" name="rooms"/></p>		    		
+		<p style="margin-top: 20px;">座　位：　<input style="height: 25px;" id="addInput6" type="text" name="seats"/><a id="see" >查看</a>
+		</p>
+		
+	</div>
+</div>
+<!-- 查看按钮弹框 -->
+<div id="seeDiv" style="width: 400px;height: 100px; display: none;">
+	<p><span class="seat active"></span><span>可选</span>
+	<span class="seat disabled"></span><span>已售</span></p>
+</div>

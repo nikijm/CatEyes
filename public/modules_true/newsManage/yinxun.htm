@@ -1,0 +1,69 @@
+<table id="bmain_table">
+
+</table>
+
+<!-- 添加弹窗 -->
+<div id="badd_board" style="width:500px;height:400px;padding:30px 30px;display: none;">
+
+            <form id="indexImage123" action="/upload" method="POST" enctype="multipart/form-data">
+            <label>首页图片: </label><input type="file" name="file" multiple="multiple">
+            </form>
+
+    <form id="baddForm" method="post">
+        <div style="margin-bottom:20px">
+            电影中文名 : <input id="zx1" typr="text" name="cName" style="width:70%" data-options="required:true,validType:'cName'" />
+        </div>
+
+        <div style="margin-bottom:20px">
+            电影英文名 : <input id="zx2" typr="text" name="eName" style="width:70%" data-options="required:true,validType:'eName'" />
+        </div>
+
+        <div style="margin-bottom:20px">
+            类　　　型 : <input id="zx3" typr="text" name="type" style="width:70%" data-options="required:true,validType:'type'" />
+        </div>
+
+        <div style="margin-bottom:20px">
+            区　　　域 : <input id="zx4" typr="text" name="country" style="width:70%">
+        </div>
+
+        <div style="margin-bottom:20px">
+            年　　　代 : <input id="zx5" typr="text" name="age" style="width:70%">
+        </div>
+        
+        <div style="margin-bottom:20px">
+            时　　　长 : <input id="zx6" typr="text" name="duration" style="width:70%" data-options="required:true,validType:'duration'" />
+        </div>
+
+        <div style="margin-bottom:20px">
+            上映时间　 : <input id="zx7" typr="text" name="releaseTime" style="width:70%">
+        </div>
+
+        <div style="margin-bottom:20px">
+            上映地区　 : <input id="zx8" typr="text" name="releaseArea" style="width:70%">
+        </div>
+
+        <div style="margin-bottom:20px">
+            票　　　房 : <input id="zx9" typr="text" name="money" style="width:70%" data-options="required:true,validType:'money'" />
+        </div>
+
+        <div style="margin-bottom:20px">
+            剧情介绍　 : <input id="zx10" typr="text" name="synopsis" style="width:70%">
+        </div>
+
+
+
+
+    </form>
+
+
+
+
+    
+
+
+
+    <a id="tuji" href="javascript:" class="easyui-linkbutton" style="margin-left:10px;margin-bottom:20px;">
+        添加图集
+    </a>
+
+</div>

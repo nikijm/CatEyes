@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/register.css"/>
+</head>
+<body>
+
+<div class="header-mini">
+    <div class="logo">
+        <img src="img/register/maoyanlogo.png" alt="logo"/>
+    </div>
+</div>
+
+<!--内容-->
+<div class="content">
+    <div class="content1">
+        <!-- <form  method="post"> -->
+            <div class=" content1-1 menu">
+                <span>手机号</span>
+                <input type="text" id="phone" name="tel" maxlength="11" />
+                <span id="dd">注册成功后全美团通用</span>
+            </div>
+            <div class="content1-2">
+                <button id="megBtn">免费获取短信动态码</button>
+            </div>
+            <div class="content1-3 menu">
+                <span>短信动态码</span>
+                <input type="text" id='messageCheck' name='messageCheck' maxlength="4" readonly />
+                <label id="megCheckLabel"></label>
+            </div>
+            <div class="content1-4 menu">
+                <span>创建密码</span>
+                <input type="password" id='pwd' name='pwd'/>
+
+            </div>
+            <div class="content1-5">
+                <span id="pwdR" >弱</span>
+                <span id="pwdM">中</span>
+                <span id="pwdS">强</span>
+            </div>
+            <div class="content1-6 menu">
+                <span>确认密码</span>
+                <input type="password" id='checkPwd' name='checkPwd'/>
+                <label id="checkPwdLabel"></label>
+            </div>
+            <div class="content1-7 menu">
+                <button id="btnLogin">同意以下协议并注册</button>
+            </div>
+            <div class="content1-8">
+                <a href="#">《美团网用户协议》</a>
+            </div>
+        <!-- </form> -->
+    </div>
+</div>
+
+<div class="foot">
+    <p>&copy;<a href="#">meituan.com</a>  <a href="#">京ICP证160733号</a>
+        京公网安备11010502030881号</p>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/reg.js"></script>
+
+</body>
+</html>
